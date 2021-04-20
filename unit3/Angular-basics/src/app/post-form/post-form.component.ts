@@ -10,7 +10,8 @@ export class PostFormComponent implements OnInit {
 
   @Output() onAdd: EventEmitter<Post> = new EventEmitter<Post>()
 
-  @ViewChild('titleInput', {static: false}) inputRef: ElementRef | undefined
+  @ViewChild('titleInput', { static: false })
+  inputRef!: ElementRef; 
 
   title = ''
   text = ''
@@ -24,7 +25,7 @@ export class PostFormComponent implements OnInit {
     if(this.text.trim() && this.title.trim()){
       const post: Post = {
         title: this.title,
-        text: this.text
+        text: this.text,
       }
       this.onAdd.emit(post)
 
