@@ -18,4 +18,8 @@ export class AppComponent {
     {title: 'second title', text: 'second text', id: 2}
 
   ]
+  updatePosts(post: Post) {
+    this.posts.unshift(post)
+    // console.log('Post', post)
+  }
 }
