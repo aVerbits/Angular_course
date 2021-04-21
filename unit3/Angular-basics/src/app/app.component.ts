@@ -15,7 +15,7 @@ export class AppComponent implements OnInit{
   // title = 'Angular-basics';
   posts: Post[] = [
     {title: 'first title', text: 'first text', id: 1},
-    // {title: 'second title', text: 'second text', id: 2} 
+    {title: 'second title', text: 'second text', id: 2} 
 ]
 
 ngOnInit(): void {
